@@ -1,10 +1,13 @@
 /* conteo.c */
+//	Se llaman las librerías y cabeceras que se van a utilizar
 #include <include/globales.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <ctype.h>
 #include "include/mess_help.h"
 #include "include/conteo.h"
+// Función que se encarga de realizar el conteo de las líneas y caracteres que se encuentran en el archivo
+// que se está utilizando.
 int contarLinesyChars(Salidas_t *sal)
 {
 	Salidas_t s;
@@ -25,7 +28,8 @@ int contarLinesyChars(Salidas_t *sal)
 	return 1;
 }
 
-
+//	Función que se encarga de realizar el conteo de las palabras que se encuentran en el archivo
+//	que se está utilizando
 void contarWords(Salidas_t *sal)
 {
 	Salidas_t s;
