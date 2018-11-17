@@ -5,11 +5,11 @@
 
 
 
-*Este proyecto se basa en la implementación de una aplicacion similar a la del comando wc del bash de Linux, 
+Este proyecto se basa en la implementación de una aplicacion similar a la del comando wc del bash de Linux, 
 pero un tanto más simplificada.
 
 A continuación se presentará una breve instrucción de lo que consiste el programa en sí: 
-*
+
 
 ---
 
@@ -43,6 +43,21 @@ Donde **5** es el número de saltos de línea en el archivo,
 
 $ wc -w miarchivo.txt
 13
+
+
+**Instrucciones del programa:**
+
+*El argumento entre paréntesis que se escribe en el comando es el nombre del
+archivo de texto que queremos analizar.
+*
+
+*
+El programa mostrará el mensaje de ayuda arriba mostrado en los siguientes casos:
+
+    Se usa la opción –h
+    El número de argumentos proporcionados es erróneo.
+    Se especifica una opción no existente.
+*
 
 
 
