@@ -1,45 +1,50 @@
-**Edit a file, create a new file, and clone from Bitbucket in under 2 minutes**
+**Proyecto de Programacion de Sistemas | Primer parcial**
 
-When you're done, you can delete the content in this README and update the file with details for others getting started with your repository.
+	
+**Integrantes** Ronny Martinez & Rommel Saquicela.
 
-*We recommend that you open this README in another tab as you perform the tasks below. You can [watch our video](https://youtu.be/0ocf7u76WSo) for a full demo of all the steps in this tutorial. Open the video in a new tab to avoid leaving Bitbucket.*
 
----
 
-## Edit a file
+*Este proyecto se basa en la implementación de una aplicacion similar a la del comando wc del bash de Linux, 
+pero un tanto más simplificada.
 
-You’ll start by editing this README file to learn how to edit a file in Bitbucket.
-
-1. Click **Source** on the left side.
-2. Click the README.md link from the list of files.
-3. Click the **Edit** button.
-4. Delete the following text: *Delete this line to make a change to the README from Bitbucket.*
-5. After making your change, click **Commit** and then **Commit** again in the dialog. The commit page will open and you’ll see the change you just made.
-6. Go back to the **Source** page.
+A continuación se presentará una breve instrucción de lo que consiste el programa en sí: 
+*
 
 ---
 
-## Create a file
+## Comando de conteo de palabras "wc"
 
-Next, you’ll add a new file to this repository.
+Para llamar el programa de manera correcta se tiene que tomar en cuenta lo siguiente:
 
-1. Click the **New file** button at the top of the **Source** page.
-2. Give the file a filename of **contributors.txt**.
-3. Enter your name in the empty file space.
-4. Click **Commit** and then **Commit** again in the dialog.
-5. Go back to the **Source** page.
 
-Before you move on, go ahead and explore the repository. You've already seen the **Source** page, but check out the **Commits**, **Branches**, and **Settings** pages.
+./wc [opciones] archivo
+wc, o "word count," muestra en consola el número total de saltos de línea, palabras, 
+y caracteres del archivo de entrada.
+-h: ayuda, muestra este mensaje
+-l: muestra el total de saltos de línea
+-w: muestra el total de palabras
+-c: muestra el total de caracteres
 
 ---
 
-## Clone a repository
+**Ejemplo de uso, asumiendo que el archivo miarchivo.txt 
+existe en el sistema:**
 
-Use these steps to clone from SourceTree, our client for using the repository command-line free. Cloning allows you to work on your files locally. If you don't yet have SourceTree, [download and install first](https://www.sourcetreeapp.com/). If you prefer to clone from the command line, see [Clone a repository](https://confluence.atlassian.com/x/4whODQ).
+$ ./wc miarchivo.txt
+5 13 57 miarchivo.txt
 
-1. You’ll see the clone button under the **Source** heading. Click that button.
-2. Now click **Check out in SourceTree**. You may need to create a SourceTree account or log in.
-3. When you see the **Clone New** dialog in SourceTree, update the destination path and name if you’d like to and then click **Clone**.
-4. Open the directory you just created to see your repository’s files.
+Donde **5** es el número de saltos de línea en el archivo, 
+**13** el número de palabras y **57** el número de caracteres.
 
-Now that you're more familiar with your Bitbucket repository, go ahead and add a new file locally. You can [push your change back to Bitbucket with SourceTree](https://confluence.atlassian.com/x/iqyBMg), or you can [add, commit,](https://confluence.atlassian.com/x/8QhODQ) and [push from the command line](https://confluence.atlassian.com/x/NQ0zDQ).
+---
+
+**Ejemplo del uso de opciones:**
+
+$ wc -w miarchivo.txt
+13
+
+
+
+
+
