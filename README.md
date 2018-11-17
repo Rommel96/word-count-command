@@ -19,11 +19,16 @@ Para llamar el programa de manera correcta se tiene que tomar en cuenta lo sigui
 
 
 ./wc [opciones] archivo
+
 wc, o "word count," muestra en consola el número total de saltos de línea, palabras, 
 y caracteres del archivo de entrada.
+
 -h: ayuda, muestra este mensaje
+
 -l: muestra el total de saltos de línea
+
 -w: muestra el total de palabras
+
 -c: muestra el total de caracteres
 
 ---
@@ -31,7 +36,9 @@ y caracteres del archivo de entrada.
 **Ejemplo de uso, asumiendo que el archivo miarchivo.txt 
 existe en el sistema:**
 
+
 $ ./wc miarchivo.txt
+
 5 13 57 miarchivo.txt
 
 Donde **5** es el número de saltos de línea en el archivo, 
@@ -41,22 +48,27 @@ Donde **5** es el número de saltos de línea en el archivo,
 
 **Ejemplo del uso de opciones:**
 
-$ wc -w miarchivo.txt
+
+$ ./wc -w miarchivo.txt
+
 13
 
 
 **Instrucciones del programa:**
 
-El argumento entre paréntesis que se escribe en el comando es el nombre del
-archivo de texto que queremos analizar.
+El numero de argumentos maximo que aceptara el programa es de 2. Cuando exista un error en la llamada del programa, se mostrara un mensaje de error apropiado.
 
 
 
 El programa mostrará el mensaje de ayuda arriba mostrado en los siguientes casos:
 
-    Se usa la opción –h
-    El número de argumentos proporcionados es erróneo.
-    Se especifica una opción no existente.
+  * Se usa la opción –h
+ 
+  * El número de argumentos proporcionados es erróneo.
+  
+  * Se especifica una opción no existente.
+  
+  * El archivo no existe.
     
 
 
