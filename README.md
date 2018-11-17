@@ -47,17 +47,18 @@ $ wc -w miarchivo.txt
 
 **Instrucciones del programa:**
 
-*El argumento entre paréntesis que se escribe en el comando es el nombre del
+El argumento entre paréntesis que se escribe en el comando es el nombre del
 archivo de texto que queremos analizar.
-*
 
-*
+
+
 El programa mostrará el mensaje de ayuda arriba mostrado en los siguientes casos:
 
-    Se usa la opción –h
-    El número de argumentos proporcionados es erróneo.
-    Se especifica una opción no existente.
-*
+ Se usa la opción -h
+ El número de argumentos proporcionados es erróneo.
+ Se especifica una opción no existente.
+    
+
 
 
 
