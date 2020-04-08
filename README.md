@@ -1,58 +1,44 @@
-**Proyecto de Programacion de Sistemas | Primer parcial**
+# Word count command **wc** implemented in C
 
-	
-**Integrantes** Ronny Martinez & Rommel Saquicela.
+This repository contains the code to generate a word counting program, inspired by the **wc** command of the Linux bash.
 
+**Usage**
 
+```bash
+	./wc	[-l] file
+				[-w] file
+				[-c] file
+```
 
-Este proyecto se basa en la implementación de una aplicacion similar a la del comando wc del bash de Linux, 
-pero un tanto más simplificada.
-
-A continuación se presentará una breve instrucción de lo que consiste el programa en sí: 
-
-
----
-
-## Comando de conteo de palabras "wc"
-
-Para llamar el programa de manera correcta se tiene que tomar en cuenta lo siguiente:
-
-
-./wc [opciones] archivo
-
-wc, o "word count," muestra en consola el número total de saltos de línea, palabras, 
-y caracteres del archivo de entrada.
-
--h: ayuda, muestra este mensaje
-
--l: muestra el total de saltos de línea
-
--w: muestra el total de palabras
-
--c: muestra el total de caracteres
+**Options**
+```bash
+	-h: Show this message
+	-l: shows the total of line breaks
+	-w: show total words
+	-c: show total characters
+```
 
 ---
 
-**Ejemplo de uso, asumiendo que el archivo miarchivo.txt 
-existe en el sistema:**
+**Example of use, assuming that "file.txt" exists in the system:**
 
+```bash
+$ ./wc file.txt
+5 13 57 file.txt
+```
 
-$ ./wc miarchivo.txt
-
-5 13 57 miarchivo.txt
-
-Donde **5** es el número de saltos de línea en el archivo, 
-**13** el número de palabras y **57** el número de caracteres.
+Where:
+**5** line breaks(\n),
+**13** the number of words
+**57** the number of characters.
 
 ---
 
-**Ejemplo del uso de opciones:**
-
-
-$ ./wc -w miarchivo.txt
-
+**Example of using options:**
+```bash
+$ ./wc -w file.txt
 13
-
+```
 
 **Instrucciones del programa:**
 
@@ -63,16 +49,9 @@ El numero de argumentos maximo que aceptara el programa es de 2. Cuando exista u
 El programa mostrará el mensaje de ayuda arriba mostrado en los siguientes casos:
 
   * Se usa la opción –h
- 
+
   * El número de argumentos proporcionados es erróneo.
-  
+
   * Se especifica una opción no existente.
-  
+
   * El archivo no existe.
-    
-
-
-
-
-
-
