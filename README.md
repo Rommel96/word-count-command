@@ -39,19 +39,3 @@ Where:
 $ ./wc -w file.txt
 13
 ```
-
-**Instrucciones del programa:**
-
-El numero de argumentos maximo que aceptara el programa es de 2. Cuando exista un error en la llamada del programa, se mostrara un mensaje de error apropiado.
-
-
-
-El programa mostrará el mensaje de ayuda arriba mostrado en los siguientes casos:
-
-  * Se usa la opción –h
-
-  * El número de argumentos proporcionados es erróneo.
-
-  * Se especifica una opción no existente.
-
-  * El archivo no existe.
