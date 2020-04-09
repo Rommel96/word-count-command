@@ -6,8 +6,8 @@ This repository contains the code to generate a word counting program, inspired 
 
 ```bash
 	./wc	[-l] file
-				[-w] file
-				[-c] file
+		[-w] file
+		[-c] file
 ```
 
 **Options**
@@ -28,8 +28,11 @@ $ ./wc file.txt
 ```
 
 Where:
-**5** line breaks(\n),
+
+**5** line breaks(\n)
+
 **13** the number of words
+
 **57** the number of characters.
 
 ---
